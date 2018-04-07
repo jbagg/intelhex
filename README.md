@@ -44,6 +44,7 @@ address will increase in size by page size (256 bytes in this example) every tim
 ```c++
 bool open(QString fileName, quint32 pageSize);
 ```
+Opens and then parses the hex file into one or more segments.  pageSize must be a power of 2.  IntelHex will align the page boundaries on this value.
 ```c++
 void reReadAll()
 ```
